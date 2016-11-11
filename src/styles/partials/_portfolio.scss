@@ -16,7 +16,7 @@
 li {
   list-style: none;
   width: 25vw;
-  height: 25vw;
+  height: 30vw;
   margin: 5px;
   background-color: white;
   box-shadow: 0px 1px 15px -5px #a2a2a2;
@@ -27,15 +27,28 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  .project-wrapper {
+    height: 100%;
+    width: 100%;
+  }
+  &:hover {
+    box-shadow: 0px 1px 15px -5px #121212;
+  }
+  &:nth-child(2) {
+    img {
+      right: 195px;
+      position: relative;
+    }
+  }
   a {
+    overflow: auto;
     height: 100%;
     width: 100%;
     img {
       height: 100%;
     }
   }
-  h4 {
-    margin: 5% 0 20% 0;
-    color: #606060;
-  }
+}
+h4 {
+  color: #a4a4a4;
 }
