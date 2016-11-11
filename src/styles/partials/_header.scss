@@ -1,0 +1,28 @@
+header {
+  position: fixed;
+  nav {
+    align-items: center;
+    width: 100vw;
+    height: 130px;
+    background-color: #272727;
+    display: flex;
+    justify-content: space-around;
+    a {
+      font-family: 'Heebo', sans-serif;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+      &:hover {
+        color: #d7b740;
+      }
+    }
+  }
+}
+.logo {
+  background-image: url("/images/M-Logo.png");
+  height: 80px;
+  width: 110px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,29 @@
+.contact {
+  background-color: rgb(242, 242, 242);
+  height: 90% !important;
+  .contact-info {
+    display: flex;
+    width: 100vw;
+    height: 70%;
+    justify-content: center;
+    align-items: flex-end;
+    div {
+      background-size: contain;
+      background-repeat: no-repeat;
+      height:80px;
+      width: 80px;
+      margin: 0 20px;
+    }
+    .envelope {
+      background-image: url("/images/envelope.svg");
+    }
+
+    .linkedin {
+      background-image: url("/images/linkedin.svg");
+    }
+
+    .github {
+      background-image: url("/images/github.svg");
+    }
+  }
+}
