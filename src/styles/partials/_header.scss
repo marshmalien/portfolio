@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  z-index: 100;
   nav {
     align-items: center;
     width: 100vw;
@@ -14,7 +15,7 @@ header {
       color: white;
       text-decoration: none;
       &:hover {
-        color: #d7b740;
+        color: $gold;
       }
     }
   }
