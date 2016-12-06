@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Marliana's Portfolio</title>
     <link rel="stylesheet" href="lib/styles/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat|Roboto:300|Heebo:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,700|Montserrat|Roboto:300|Heebo:300" rel="stylesheet">
   </head>
   <body>
 
@@ -28,7 +28,7 @@
             Welcome to my portfolio! My name is Marliana Lara and most of my friends call me Marly for short.
             I am a front-end developer based in Durham, NC. I was a pediatric nurse in a past life. When I’m not staring at a screen, you can find me taking photos, drinking kalimotxo, and playing board games.
 
-            If you’d like me to bring your ideas to life you can message me here!
+            If you’d like me to bring your ideas to life you can message me <span id="shortcut">here!</span>
           </p>
         </div>
       </section>
@@ -94,8 +94,8 @@
       <section class="full-screen contact" id="contact">
 
         <form id="contact-form">
-          <input type="hidden" name="_subject" id="subject" value="Portfolio Contact Form">
-          <input type="text" name="_gotcha" style="display:none" />
+          <input type="hidden" name="_subject" id="subject" value="Portfolio Contact Form" placeholder="">
+          <input type="text" name="_gotcha" placeholder="" style="display:none" />
           <p>Dear Marly,</p>
           <p>My
             <label for="name">name</label> is
@@ -111,7 +111,7 @@
           <p>
             <textarea name="message" id="message" placeholder="(your message here)" class="expanding" required></textarea>
           </p>
-          <button type="submit" name="button"></button>
+          <button type="submit" name="button">Send</button>
           <p class="submit-success">Success</p>
           <p class="submit-fail">Fail</p>
         </form>

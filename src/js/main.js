@@ -85,4 +85,10 @@
     }
   });
 
+  $('#shortcut').click(function() {
+    $('html, body').animate({
+    scrollTop: $("#contact").offset().top - 130
+    }, 2000);
+  })
+
 })();

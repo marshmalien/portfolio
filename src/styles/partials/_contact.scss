@@ -1,17 +1,20 @@
 .contact {
   background-color: rgb(242, 242, 242);
   height: 90% !important;
+  flex-direction: column;
+  padding-top: 3%;
   .contact-info {
     display: flex;
     width: 100vw;
-    height: 70%;
+    height: 15%;
+    margin-bottom: 2%;
     justify-content: center;
     align-items: flex-end;
     div {
       background-size: contain;
       background-repeat: no-repeat;
-      height:80px;
-      width: 80px;
+      height: 70px;
+      width: 70px;
       margin: 0 20px;
     }
     .envelope {
@@ -29,4 +32,71 @@
 }
 #contact-form {
   color: black;
+  flex-grow: 1;
+  width: 70%;
+  font-family: 'Merriweather', 'Times New Roman', serif;
+  font-size: 19px;
+  line-height: 1.6;
+  p {
+    margin: 1em 0;
+  }
+  textarea,
+  input {
+    letter-spacing: .6px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    background: none;
+    border-bottom: 2px dashed rgba(240, 198, 69, .8);
+    font-family: 'Merriweather', serif;
+    font-size: .9em;
+    font-weight: 700;
+    color: $gold;
+    padding: 1rem;
+    &:valid {
+      border-bottom: 1px solid rgba($gold, .4);
+    }
+  }
+  textarea {
+  text-align: left;
+  resize: none;
+  width: 60%;
+  min-width: 300px;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #c3c3c3;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+     color:    #333;
+     opacity:  1;
+     font-size: 1em;
+     font-weight: 300;
+     font-style: italic;
+     font-family: 'Merriweather', serif;
+     text-align: center;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+     color:    #333;
+     opacity:  1;
+     font-size: 1em;
+     font-style: italic;
+     font-weight: 300;
+     font-family: 'Merriweather', serif;
+     text-align: center;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color:    #333;
+     font-size: 1em;
+     font-style: italic;
+     font-weight: 300;
+     font-family: 'Merriweather', serif;
+     text-align: center;
+  }
+
 }
