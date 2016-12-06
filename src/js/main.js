@@ -21,6 +21,7 @@
     }
   }
   */
+
   var scenes = {
     'intro': {
       'intro': 'intro-anchor'
@@ -83,29 +84,5 @@
       }
     }
   });
-
-
-
-  /*
-   * Bind scroll to anchor links using jQuery
-
-  $(document).on("click", "a[href^=#]", function(e) {
-    var id = $(this).attr("href");
-
-    if($(id).length > 0) {
-      e.preventDefault();
-
-      // trigger scroll
-      controller.scrollTo(id);
-
-      // If supported by the browser we can also update the URL
-      if (window.history && window.history.pushState) {
-        history.pushState("", document.title, id);
-      }
-    }
-
-  });
-
-  */
 
 })();

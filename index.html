@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Marliana's Portfolio</title>
     <link rel="stylesheet" href="lib/styles/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Heebo:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat|Roboto:300|Heebo:300" rel="stylesheet">
   </head>
   <body>
 
@@ -20,43 +20,74 @@
 
     <main class="full-screen" id="intro" role="main">
       <section class="full-screen about" id="start">
-        <h1>About Me</h1>
+        <img src="images/about-me-crop.jpg" alt="">
+        <div class="about-me-info">
+          <h3>Hello! I am Marly,</h3>
+          <h4>a front-end developer.</h4>
+          <p>
+            Welcome to my portfolio! My name is Marliana Lara and most of my friends call me Marly for short.
+            I am a front-end developer based in Durham, NC. I was a pediatric nurse in a past life. When I’m not staring at a screen, you can find me taking photos, drinking kalimotxo, and playing board games.
+
+            If you’d like me to bring your ideas to life you can message me here!
+          </p>
+        </div>
       </section>
 
-      <section class="full-screen portfolio" id="section-1">
+      <section class="full-screen final-project" id="section-1">
+        <div class="final-project-images">
+          <img src="images/nanny-dash-home.png" alt="">
+          <img src="images/nanny-dash-jobs.png" alt="">
+          <img src="images/nanny-dash-message.png" alt="">
+        </div>
+        <div class="final-project-info">
+          <h1>Nanny<span>Dash</span></h1>
+          <h3>Final Project for The Iron Yard</h3>
+          <p>I worked with a team of 4 developers to create this project in two weeks. NannyDash is a dashboard application that simplifies communication and job requests between agencies, families, and nannies. I implemented many of the dashboard views using Angular 1.5's component method and used AngularJS routing and templating to keep the page loads snappy. The project was built with AngularJS front-end and a Rails back-end.</p>
+        </div>
+      </section>
+
+      <section class="full-screen portfolio">
+        <div class="portfolio-header"><h3>Recent Work</h3></div>
         <div class="portfolio-wrapper">
-          <ul>
-            <li>
-              <div class="project-wrapper">
-                <a href="https://ironmemory.herokuapp.com/">
-                  <img src="images/memory-game.png" alt="Memory Card Game" />
-                </a>
-                <div class="description">
-                  <h4>Memory Card Game</h4>
-                </div>
+          <div class="item">
+            <a class="item-hover" href="https://github.com/nsemmler/memory_game">
+              <div class="item-info">
+                <div class="headline">The Iron Memory</div>
+                <div class="line"></div>
+                <div class="info">Memory Card Game</div>
+                <div class="github"></div>
               </div>
-            </li>
+              <div class="mask"></div>
+            </a>
+            <div class="item-image"><img src="images/memory-game.png" alt="Memory Card Game" /></div>
+          </div>
 
-            <li>
-              <div class="project-wrapper">
-                <a href="https://marshmalien.github.io/shopular/">
-                  <img src="images/shopular.png" alt="Shopular App" />
-                </a>
-                <div class="description">
-                  <h4>TWO</h4>
-                </div>
+          <div class="item">
+            <a class="item-hover" href="https://github.com/marshmalien/allThingsSocial">
+              <div class="item-info">
+                <div class="headline">All Things Social</div>
+                <div class="line"></div>
+                <div class="info">Social Media Training for Parents</div>
+                <div class="github"></div>
               </div>
-            </li>
+              <div class="mask"></div>
+            </a>
+            <div class="item-image"><img src="images/allthingssocial.png" alt="Memory Card Game" /></div>
+          </div>
 
-            <li>
-              <div class="project-wrapper">
-                <img src="" alt="" />
-                <div class="description">
-                  <h4>THREE</h4>
-                </div>
+          <div class="item">
+            <a class="item-hover" href="https://marshmalien.github.io/shopular/">
+              <div class="item-info">
+                <div class="headline">Shopular</div>
+                <div class="line"></div>
+                <div class="info">First Angular Application</div>
+                <div class="github"></div>
               </div>
-            </li>
-          </ul>
+              <div class="mask"></div>
+            </a>
+            <div class="item-image"><img src="images/shopular.png" alt="Shopular App" /></div>
+          </div>
+
         </div>
       </section>
 
