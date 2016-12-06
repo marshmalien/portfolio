@@ -17,22 +17,23 @@
 		}
 	}
 	.about-me-info {
-		width: 50%;
 		margin-top: 10%;
+		padding: 2%;
 		text-align: left;
+		width: 50%;
 		h3 {
 			font-size: 40px;
 		}
 		h4 {
-			font-size: 30px;
 			font-family: 'Heebo', sans-serif;
+			font-size: 30px;
 			margin-top: 2%;
 		}
 		p {
 			font-family: 'Merriweather', serif;
-			margin-top: 5%;
-			line-height: 1.4em;
 			font-size: 20px;
+			line-height: 1.4em;
+			margin-top: 5%;
 		}
 	}
 }
