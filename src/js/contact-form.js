@@ -7,7 +7,7 @@ $(document).ready(function() {
 
       $('#email').on('input', function() {
         subject.val("Portfolio Contact Form (" + $(this).val() + ")");
-      })
+      });
 
       if(name.val() == "" || email.val() == "" || message.val() == "") {
         $('.submit-fail').fadeToggle(400);
@@ -25,7 +25,6 @@ $(document).ready(function() {
         $('.submit-success').fadeToggle(400);
       }
     });
-
   $('.submit-fail, .submit-success').click(function() {
     $(this).hide();
   });
