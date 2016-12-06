@@ -1,32 +1,17 @@
 @import "partials/reset";
 @import "partials/variables";
+@import "partials/fonts";
 @import "partials/header";
 @import "partials/about-me";
+@import "partials/final-project";
 @import "partials/portfolio";
 @import "partials/contact";
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-html,
-body {
-  margin: 0;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-h1,
-p {
-  margin: 0;
-  padding: 0;
-}
-
 section {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  text-align: center;
   color: #EFEFEF;
+  display: flex;
+  text-align: center;
 }
 
 .full-screen {

@@ -1,0 +1,41 @@
+section.final-project {
+  flex-wrap: wrap;
+}
+
+.final-project-images {
+  align-self: flex-start;
+  position: relative;
+  height: 100%;
+  width: 60%;
+  img {
+    position: absolute;
+    width: 80%;
+    &:nth-child(1) {
+      bottom: 250px;
+      width: 100%;
+      z-index: 1;
+      left: 50px;
+      box-shadow: 1px 4px 24px -6px #353535;
+    }
+    &:nth-child(2) {
+      bottom: 0px;
+      z-index: -1;
+      transform: rotate(11deg);
+      left: 400px;
+      width: 70%;
+    }
+    &:nth-child(3) {
+      bottom: 10px;
+      left: 30px;
+      transform: rotate(-11deg);
+      z-index: -2;
+      width: 60%;
+    }
+  }
+}
+
+.final-project-info {
+  height: 100%;
+  padding: 3% 5%;
+  width: 40%;
+}
