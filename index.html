@@ -11,10 +11,10 @@
     <header id="banner">
       <nav class="anchor-nav" role="navigation">
         <a href="#intro" id="intro-anchor">About Me</a>
-        <a href="#section-1" id="anchor1">Portfolio</a>
+        <a href="#portfolio" id="anchor1">Portfolio</a>
         <div class="logo"></div>
-        <a href="#section-2" id="anchor2">Resume</a>
-        <a href="#section-2" id="anchor3">Contact</a>
+        <a href="#contact" id="anchor2">Resume</a>
+        <a href="#contact" id="anchor3">Contact</a>
       </nav>
     </header>
 
@@ -33,7 +33,7 @@
         </div>
       </section>
 
-      <section class="full-screen final-project" id="section-1">
+      <section class="full-screen final-project" id="portfolio">
         <div class="final-project-images">
           <img src="images/nanny-dash-home.png" alt="">
           <img src="images/nanny-dash-jobs.png" alt="">
@@ -91,7 +91,29 @@
         </div>
       </section>
 
-      <section class="full-screen contact" id="section-2">
+      <section class="full-screen contact" id="contact">
+
+        <form id="contact-form">
+          <input type="hidden" name="_subject" id="subject" value="Portfolio Contact Form">
+          <input type="text" name="_gotcha" style="display:none" />
+          <p>Dear Marly,</p>
+          <p>My
+            <label for="name">name</label> is
+            <input type="text" name="name" id="name" minlength="3" placeholder="(your name here)" required> and</p>
+
+          <p>my
+            <label for="email">email address</label> is
+            <input type="email" name="email" id="email" placeholder="(your email address)" required>
+          </p>
+
+          <p> I have a <label for="message">message</label> for you,</p>
+
+          <p>
+            <textarea name="message" id="message" placeholder="(your message here)" class="expanding" required></textarea>
+          </p>
+          <button type="submit" name="button"></button>
+        </form>
+
         <div class="contact-info">
           <div class="envelope"></div>
           <div class="github"></div>

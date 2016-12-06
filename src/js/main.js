@@ -27,10 +27,10 @@
       'intro': 'intro-anchor'
     },
     'scene2': {
-      'section-1': 'anchor1'
+      'portfolio': 'anchor1'
     },
     'scene3': {
-      'section-2': 'anchor2'
+      'contact': 'anchor2'
     }
   };
 
