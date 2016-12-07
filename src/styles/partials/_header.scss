@@ -20,6 +20,7 @@ header {
         color: $gold;
       }
       &.egg {
+        display: none;
         cursor: default;
         div {
           cursor: pointer;

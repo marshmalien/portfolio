@@ -1,6 +1,5 @@
 $(document).ready(function() {
   'use strict';
-  $('.egg').hide();
 
   $('header svg').click(function() {
     if($(this).attr("class") === "") {
@@ -119,6 +118,5 @@ $(document).ready(function() {
     $('html, body').animate({
     scrollTop: $("#contact").offset().top - 130
     }, 2000);
-  })
-
+  });
 });
