@@ -41,3 +41,43 @@
 		}
 	}
 }
+
+@include media(tablet) {
+	.about .about-me-info{
+		h3 {
+			font-size: 30px;
+		}
+		h4 {
+			font-size: 20px;
+		}
+		p {
+			font-size: 17px;
+			letter-spacing: .6px;
+		}
+	}
+}
+@include media(smallTablet) {
+	section.about {
+		height: 80%;
+		img {
+			width: 40%;
+			margin: 0% 5% 0;
+		}
+		.about-me-info {
+			margin: 0;
+		}
+	}
+}
+@include media(largeMobile) {
+	section.about {
+		height: 100%;
+		flex-direction: column;
+		img {
+			margin: 0 5% 5%;
+		}
+		.about-me-info {
+			width: 80%;
+			text-align: center;
+		}
+	}
+}

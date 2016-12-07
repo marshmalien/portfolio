@@ -2,17 +2,34 @@ $(document).ready(function() {
   'use strict';
   $('.egg').hide();
 
-  $('svg').click(function() {
+  $('header svg').click(function() {
     if($(this).attr("class") === "") {
       $(this).attr("class", "gold");
     } else {
       $(this).attr("class", "");
     }
 
-
     $('.nav').toggle();
     $('.egg').toggle();
   });
+
+  $("#nav-trigger span").click(function() {
+    console.log('clicked');
+    if ($("nav#nav-mobile ul").hasClass("expanded")) {
+      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+      $(this).removeClass("open");
+    } else {
+      $("nav#nav-mobile ul").addClass("expanded").slideDown(250);
+      $(this).addClass("open");
+    }
+  });
+  $("#nav-mobile li").click(function(){
+    if ($("nav#nav-mobile ul").hasClass("expanded")) {
+      $("nav#nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
+      $(this).removeClass("open");
+    }
+  });
+
 
   // Init controller
   var controller = new ScrollMagic.Controller({
