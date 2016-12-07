@@ -39,5 +39,8 @@ svg {
 }
 .gold {
   transform: rotate(360deg);
+  -moz-webkit-transform: rotate(360deg);
+  -ms-webkit-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   fill: $gold;
 }
