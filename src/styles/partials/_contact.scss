@@ -1,6 +1,6 @@
 .contact {
   background-color: rgb(242, 242, 242);
-  height: 90% !important;
+  height: 650px;
   flex-direction: column;
   padding-top: 3%;
   .contact-info {
@@ -13,8 +13,8 @@
     div {
       background-size: contain;
       background-repeat: no-repeat;
-      height: 70px;
-      width: 70px;
+      height: 50px;
+      width: 50px;
       margin: 0 20px;
     }
     .envelope {
@@ -31,12 +31,12 @@
   }
 }
 #contact-form {
-  color: black;
   flex-grow: 1;
   width: 70%;
   font-family: 'Merriweather', 'Times New Roman', serif;
   font-size: 19px;
   line-height: 1.6;
+  color: $darkgrey;
   p {
     margin: 1em 0;
   }
@@ -51,7 +51,7 @@
     font-family: 'Merriweather', serif;
     font-size: .9em;
     font-weight: 700;
-    color: $gold;
+    color: $darkgrey;
     padding: 1rem;
     &:valid {
       border-bottom: 1px solid rgba($gold, .4);
@@ -60,8 +60,9 @@
   textarea {
   text-align: left;
   resize: none;
-  width: 60%;
+  width: 70%;
   min-width: 300px;
+  overflow: hidden;
   }
 
   ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
@@ -98,5 +99,32 @@
      font-family: 'Merriweather', serif;
      text-align: center;
   }
-
+  button {
+    background-color: transparent;
+    background-image: url("/images/plane.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    outline: none;
+    &:hover {
+      -webkit-animation-name: Floating;
+      -webkit-animation-duration: 7s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: ease-in-out;
+    }
+    @-webkit-keyframes Floating{
+        0% {-webkit-transform:translate(0, 0px);}
+        25% {-webkit-transform:translate(-3px, -5px);}
+        50% {-webkit-transform:translate(0, 4px);}
+        70% {-webkit-transform:translate(3px, -5px);}
+        100% {-webkit-transform: translate(0, -0px);    }
+    }
+  }
+  .submit-success,
+  .submit-fail {
+    margin: 0;
+  }
 }

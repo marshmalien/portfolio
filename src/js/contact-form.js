@@ -18,16 +18,32 @@ $(document).ready(function() {
     });
   }
 
+  function autoGrow () {
+    var t = $(this)[0];
+    console.log('S '+t.scrollHeight);
+    console.log('C '+t.clientHeight);
+
+    if ($(this).val().length === 0) {
+      t.style.height = '76px';
+    } else if (t.scrollHeight > t.clientHeight) {
+      t.style.height = t.scrollHeight + "px";
+    }
+    if (t.scrollHeight >= 150) {
+      t.style.height = '150px';
+      t.style.overflow = "auto";
+    }
+  }
+
   $('input[type="text"], input[type="email"]')
   .keyup(resizeInput).each(setInputSize);
 
+  $('textarea').keydown(autoGrow);
 
   $('#contact-form').submit(function(event) {
       var subject = $('#subject');
       var name = $('#name');
       var email = $('#email');
       var message = $('#message');
-
 
       $('#email').on('input', function() {
         subject.val("Portfolio Contact Form (" + $(this).val() + ")");
@@ -47,6 +63,7 @@ $(document).ready(function() {
         event.preventDefault();
         $(this).get(0).reset();
         $('.submit-success').fadeToggle(400);
+        $('textarea')[0].style.height = '76px';
       }
     });
 
