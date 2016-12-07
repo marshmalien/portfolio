@@ -13,7 +13,7 @@ $(document).ready(function() {
 
   function setInputSize() {
     var inputList = document.querySelectorAll('input');
-    inputList.forEach(function(input) {
+    Array.from(inputList).forEach(function(input) {
       input.setAttribute('size', input.getAttribute('placeholder').length);
     });
   }
