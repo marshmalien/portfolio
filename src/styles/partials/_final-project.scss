@@ -39,3 +39,42 @@ section.final-project {
   padding: 3% 5%;
   width: 40%;
 }
+
+@include media(desktop){
+  .final-project-images img:nth-child(1) {
+    left: 10px;
+  }
+  .final-project-info {
+    padding: 3% 3%;
+  }
+}
+@include media(tablet){
+  .final-project {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    .final-project-info {
+      width: 80%;
+      height: 50%;
+    }
+    .final-project-images {
+      height: 30%;
+      width: 70%;
+      img:first-child {
+        left: 100px;
+        bottom: 100px;
+      }
+    }
+  }
+}
+@include media(mobile) {
+  .final-project .final-project-images {
+    width: 90%;
+    img:first-child {
+      left: 20px;
+      bottom: 20px;
+    }
+    img:nth-child(n+2) {
+      display: none;
+    }
+  }
+}
