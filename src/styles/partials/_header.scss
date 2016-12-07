@@ -19,6 +19,12 @@ header {
       &:hover {
         color: $gold;
       }
+      &.egg {
+        cursor: default;
+        div {
+          cursor: pointer;
+        }
+      }
     }
   }
 }
