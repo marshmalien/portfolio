@@ -10,26 +10,33 @@
     margin-bottom: 2%;
     justify-content: center;
     align-items: flex-end;
-    div {
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 50px;
-      width: 50px;
-      margin: 0 20px;
-    }
-    .envelope {
-      background-image: url("/images/envelope.svg");
-    }
-
-    .linkedin {
-      background-image: url("/images/linkedin.svg");
-    }
-
-    .github {
-      background-image: url("/images/github.svg");
-    }
+  }
+  div {
+    margin: 0 20px;
   }
 }
+div {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+  &.envelope {
+    background-image: url("/images/envelope.svg");
+  }
+
+  &.linkedin {
+    background-image: url("/images/linkedin.svg");
+  }
+
+  &.github {
+    background-image: url("/images/github.svg");
+  }
+  &.twitter {
+    background-image: url("/images/twitter.svg");
+  }
+}
+
 #contact-form {
   flex-grow: 1;
   width: 70%;

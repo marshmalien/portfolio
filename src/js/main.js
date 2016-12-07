@@ -1,5 +1,18 @@
-(function() {
+$(document).ready(function() {
   'use strict';
+  $('.egg').hide();
+
+  $('svg').click(function() {
+    if($(this).attr("class") === "") {
+      $(this).attr("class", "gold");
+    } else {
+      $(this).attr("class", "");
+    }
+
+
+    $('.nav').toggle();
+    $('.egg').toggle();
+  });
 
   // Init controller
   var controller = new ScrollMagic.Controller({
@@ -91,4 +104,4 @@
     }, 2000);
   })
 
-})();
+});
