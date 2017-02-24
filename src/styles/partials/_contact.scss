@@ -135,3 +135,8 @@ div.link {
     margin: 0;
   }
 }
+@include media(tablet) {
+	section.contact {
+		padding: 10%;
+	}
+}

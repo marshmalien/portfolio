@@ -123,15 +123,20 @@
 }
 
 @include media(desktop) {
-	section:nth-child(3) {
+	section.portfolio {
 		height: 70%;
 		.item .item-hover .headline {
 			margin-top: 20%;
 		}
 	}
 }
+@include media(tablet) {
+	section.portfolio {
+		height: 50%;
+	}
+}
 @include media(smallTablet) {
-	section:nth-child(3) {
+	section.portfolio {
 		height: 180%;
 		.portfolio-wrapper {
 			flex-direction: column;

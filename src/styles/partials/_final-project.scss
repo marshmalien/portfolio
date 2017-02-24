@@ -74,6 +74,7 @@ section.final-project {
   .final-project {
     flex-direction: column-reverse;
     justify-content: space-between;
+    padding: 10%;
     .final-project-info {
       width: 80%;
       height: 50%;
@@ -82,24 +83,25 @@ section.final-project {
       height: 30%;
       width: 90%;
       align-self: center;
-
-      .final-project-dashboard {
-        height: 170%;
-        bottom: 160px;
-      }
-      img:nth-child(n+2) {
-        display: none;
-      }
+    }
+    .final-project-dashboard {
+      height: 170%;
+      bottom: 160px;
+    }
+    img:nth-child(n+2) {
+      display: none;
     }
   }
 }
 @include media(largeMobile) {
-  .final-project .final-project-images .final-project-dashboard {
+  .final-project .final-project-dashboard {
     height: 130%;
-    bottom: 100px;
   }
 }
 @include media(mobile) {
+  .final-project {
+    margin-bottom: 5%;
+  }
   .final-project .final-project-images {
     width: 90%;
     .final-project-dashboard {
