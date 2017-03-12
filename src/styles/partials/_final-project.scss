@@ -99,8 +99,9 @@ section.final-project {
   }
 }
 @include media(mobile) {
-  .final-project {
+  section.final-project {
     margin-bottom: 5%;
+    height: 120vh;
   }
   .final-project .final-project-images {
     width: 90%;
