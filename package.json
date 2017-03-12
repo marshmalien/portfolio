@@ -18,5 +18,17 @@
   },
   "dependencies": {
     "scrollmagic": "^2.0.5"
-  }
+  },
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marshmalien/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marshmalien/portfolio/issues"
+  },
+  "homepage": "https://github.com/marshmalien/portfolio#readme"
 }

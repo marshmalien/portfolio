@@ -1,15 +1,16 @@
-.portfolio {
+section.portfolio {
 	background-color: #dedede;
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+	padding: 5%;
+	height: 180vh;
   .portfolio-wrapper {
     display: flex;
-    height: 100%;
+		flex-flow: row wrap;
     height: 80%;
     justify-content: space-around;
     padding-top: 5%;
-    width: 100%;
     width: 90%;
   }
 	.portfolio-header {
@@ -35,11 +36,11 @@
 		border: 10px solid white;
 		box-shadow: 0px 1px 15px -5px #a2a2a2;
 		list-style: none;
-		margin: 5px;
+		margin: 1rem;
 		position: relative;
 		overflow: hidden;
 		height: 30vw;
-		width: 25vw;
+		width: 30vw;
 		&:hover {
 			box-shadow: 0px 1px 15px -5px #121212;
 		}
