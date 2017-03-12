@@ -74,7 +74,6 @@ section.final-project {
   .final-project {
     flex-direction: column-reverse;
     justify-content: space-between;
-    padding: 10%;
     .final-project-info {
       width: 80%;
       height: 50%;
@@ -100,8 +99,7 @@ section.final-project {
 }
 @include media(mobile) {
   section.final-project {
-    margin-bottom: 5%;
-    height: 120vh;
+    height: 150vh;
   }
   .final-project .final-project-images {
     width: 90%;
